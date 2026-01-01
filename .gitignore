@@ -1,0 +1,41 @@
+# =====================
+# Node / JS
+# =====================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =====================
+# Environment variables
+# =====================
+.env
+.env.local
+.env.production
+.env.development
+
+# =====================
+# Backend uploads / temp
+# =====================
+backend/uploads/
+backend/tmp/
+
+# =====================
+# Frontend build
+# =====================
+frontend/dist/
+frontend/.vite/
+
+# =====================
+# OS / Editor
+# =====================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =====================
+# Logs
+# =====================
+logs/
+*.log
