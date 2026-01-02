@@ -1,13 +1,19 @@
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
+const connectDB = require("./config/db"); // ✅ ADD THIS
 
 dotenv.config();
 
 const app = express();
 
 /* ================================
-   CORS CONFIGURATION (FINAL)
+   CONNECT DATABASE (CRITICAL)
+================================ */
+connectDB();
+
+/* ================================
+   CORS CONFIGURATION
 ================================ */
 const allowedOrigins = [
   "http://localhost:5173",
@@ -16,7 +22,6 @@ const allowedOrigins = [
 
 app.use(cors({
   origin: function (origin, callback) {
-    // allow requests with no origin (like Postman)
     if (!origin) return callback(null, true);
 
     if (allowedOrigins.includes(origin)) {
@@ -30,7 +35,6 @@ app.use(cors({
   credentials: true
 }));
 
-// Handle preflight requests
 app.options("*", cors());
 
 /* ================================
