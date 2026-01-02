@@ -11,7 +11,7 @@ export default function Register() {
   const submit = async (e) => {
     e.preventDefault();
     try {
-      await api.post("/auth/register", data);
+      await api.post("/auth/register", form);
 
       toast.success("Registration successful! Please login.");
 
