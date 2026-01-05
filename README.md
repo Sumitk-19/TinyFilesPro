@@ -10,89 +10,56 @@ The application is designed to work efficiently in both guest mode and authentic
 
 
 🚀 Live Demo
-
 Frontend (Vercel): https://tiny-files-pro.vercel.app/
-
 Backend (Render): https://tinyfilespro.onrender.com
 
 🛠️ Tech Stack
+
 Frontend
-
 React (Vite)
-
 Plain CSS
-
 Axios
-
 React Router
-
 React Toastify
 
 Backend
-
 Node.js
-
 Express.js
-
 MongoDB (Atlas)
-
 Mongoose
-
 JWT Authentication
-
 Multer (memory storage)
-
 Sharp (image processing)
-
 PDF-Lib (PDF operations)
 
 Deployment
-
 Frontend: Vercel
-
 Backend: Render
-
 Database: MongoDB Atlas
 
 ✨ Features
 🔐 Authentication
-
 User registration & login
-
 JWT-based authentication
-
 Secure protected routes
-
 Guest access for basic features
 
 🖼️ Image Tools
-
 Resize images by width & height
-
 Crop images using GUI (react-easy-crop)
-
 Change image format (JPG / PNG / WEBP)
-
 Adjust image quality using slider
-
 Resize image to a target file size (KB)
-
 Direct image download after processing
 
 📄 PDF Tools
-
 Merge multiple PDF files into one
-
 Compress PDF files
-
 Secure in-memory file handling (cloud safe)
 
 📊 Dashboard
-
 History of user operations (logged-in users)
-
 Tracks original vs processed file size
-
 Operation type tracking
 
 🧠 Project Architecture
@@ -107,23 +74,16 @@ MongoDB Atlas
 
 
 Frontend communicates with backend using REST APIs
-
 Backend handles authentication, validation, and file processing
-
 MongoDB stores users and history data
 
 🔑 Authentication Flow (JWT)
 
 User logs in with email & password
-
 Backend verifies credentials using bcrypt
-
 JWT token is generated and returned
-
 Token is stored in browser (localStorage)
-
 Token is attached to protected API requests
-
 Backend verifies token for secure access
 
 🌍 Environment Variables
@@ -154,28 +114,19 @@ npm run dev
 
 
 Frontend runs on:
-
 http://localhost:5173
 
 
 Backend runs on:
-
 http://localhost:5000
 
 🧪 Error Handling & Security
-
 Proper HTTP status codes (400, 401, 500)
-
 Backend validation for all inputs
-
 Secure password hashing with bcrypt
-
 JWT secret stored securely in environment variables
-
 CORS configured for production & development
-
 No file system dependency (cloud-safe)
 
 📜 License
-
 This project is created for educational and learning purposes.
