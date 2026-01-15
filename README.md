@@ -11,6 +11,7 @@ The application is designed to work efficiently in both guest mode and authentic
 
 🚀 Live Demo
 Frontend (Vercel): https://tiny-files-pro.vercel.app/
+
 Backend (Render): https://tinyfilespro.onrender.com
 
 🛠️ Tech Stack
@@ -43,29 +44,30 @@ Backend: Render
 Database: MongoDB Atlas
 
 ✨ Features
+
 🔐 Authentication
-User registration & login
-JWT-based authentication
-Secure protected routes
-Guest access for basic features
+1. User registration & login
+2. JWT-based authentication
+3. Secure protected routes
+4. Guest access for basic features
 
 🖼️ Image Tools
-Resize images by width & height
-Crop images using GUI (react-easy-crop)
-Change image format (JPG / PNG / WEBP)
-Adjust image quality using slider
-Resize image to a target file size (KB)
-Direct image download after processing
+1. Resize images by width & height
+2. Crop images using GUI (react-easy-crop)
+3. Change image format (JPG / PNG / WEBP)
+4. Adjust image quality using slider
+5. Resize image to a target file size (KB)
+6. Direct image download after processing
 
 📄 PDF Tools
-Merge multiple PDF files into one
-Compress PDF files
-Secure in-memory file handling (cloud safe)
+1. Merge multiple PDF files into one
+2. Compress PDF files
+3. Secure in-memory file handling (cloud safe)
 
 📊 Dashboard
-History of user operations (logged-in users)
-Tracks original vs processed file size
-Operation type tracking
+1. History of user operations (logged-in users)
+2. Tracks original vs processed file size
+3. Operation type tracking
 
 🧠 Project Architecture
 Frontend (React + Vite)
@@ -79,24 +81,30 @@ MongoDB Atlas
 
 
 Frontend communicates with backend using REST APIs
+
 Backend handles authentication, validation, and file processing
+
 MongoDB stores users and history data
 
 🔑 Authentication Flow (JWT)
 
-User logs in with email & password
-Backend verifies credentials using bcrypt
-JWT token is generated and returned
-Token is stored in browser (localStorage)
-Token is attached to protected API requests
-Backend verifies token for secure access
+* User logs in with email & password
+* Backend verifies credentials using bcrypt
+* JWT token is generated and returned
+* Token is stored in browser (localStorage)
+* Token is attached to protected API requests
+* Backend verifies token for secure access
 
 🌍 Environment Variables
+
 Backend (Render)
+
 MONGO_URI=your_mongodb_connection_string
+
 JWT_SECRET=your_jwt_secret_key
 
 Frontend (Vercel)
+
 VITE_API_URL=https://tinyfilespro.onrender.com/api
 
 
@@ -105,15 +113,18 @@ VITE_API_URL=https://tinyfilespro.onrender.com/api
 📦 Installation (Local Setup)
 
 1️⃣ Clone Repository
+
 git clone https://github.com/your-username/tinyfiles.git
 cd tinyfiles
 
 2️⃣ Backend Setup
+
 cd backend
 npm install
 npm run dev
 
 3️⃣ Frontend Setup
+
 cd frontend
 npm install
 npm run dev
@@ -127,11 +138,11 @@ Backend runs on:
 http://localhost:5000
 
 🧪 Error Handling & Security
-Proper HTTP status codes (400, 401, 500)
-Backend validation for all inputs
-Secure password hashing with bcrypt
-JWT secret stored securely in environment variables
-CORS configured for production & development
+1. Proper HTTP status codes (400, 401, 500)
+2. Backend validation for all inputs
+3. Secure password hashing with bcrypt
+4. JWT secret stored securely in environment variables
+5. CORS configured for production & development
 
 
 
