@@ -98,6 +98,7 @@ VITE_API_URL=https://tinyfilespro.onrender.com/api
 ⚠️ .env files are excluded from version control using .gitignore
 
 📦 Installation (Local Setup)
+
 1️⃣ Clone Repository
 git clone https://github.com/your-username/tinyfiles.git
 cd tinyfiles
@@ -126,6 +127,10 @@ Backend validation for all inputs
 Secure password hashing with bcrypt
 JWT secret stored securely in environment variables
 CORS configured for production & development
+
+
+
+Author : Sumit Kumar
 No file system dependency (cloud-safe)
 
 📜 License
