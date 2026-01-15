@@ -16,25 +16,30 @@ Backend (Render): https://tinyfilespro.onrender.com
 🛠️ Tech Stack
 
 Frontend
-React (Vite)
-Plain CSS
-Axios
-React Router
-React Toastify
+
+1. React (Vite)
+2. Plain CSS
+3. Axios
+4. React Router
+5. React Toastify
 
 Backend
-Node.js
-Express.js
-MongoDB (Atlas)
-Mongoose
-JWT Authentication
-Multer (memory storage)
-Sharp (image processing)
-PDF-Lib (PDF operations)
+
+1. Node.js
+2. Express.js
+3. MongoDB (Atlas)
+4. Mongoose
+5. JWT Authentication
+6. Multer (memory storage)
+7. Sharp (image processing)
+8. PDF-Lib (PDF operations)
 
 Deployment
+
 Frontend: Vercel
+
 Backend: Render
+
 Database: MongoDB Atlas
 
 ✨ Features
