@@ -113,22 +113,24 @@ VITE_API_URL=https://tinyfilespro.onrender.com/api
 📦 Installation (Local Setup)
 
 1️⃣ Clone Repository
-
+```
 git clone https://github.com/your-username/tinyfiles.git
 cd tinyfiles
+```
 
 2️⃣ Backend Setup
-
+```
 cd backend
 npm install
 npm run dev
+```
 
 3️⃣ Frontend Setup
-
+```
 cd frontend
 npm install
 npm run dev
-
+```
 
 Frontend runs on:
 http://localhost:5173
@@ -147,7 +149,7 @@ http://localhost:5000
 
 
 Author : Sumit Kumar
-No file system dependency (cloud-safe)
+
 
 📜 License
 This project is created for educational and learning purposes.
