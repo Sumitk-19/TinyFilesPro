@@ -7,12 +7,15 @@ The application is designed to work efficiently in both guest mode and authentic
 <img width="682" height="626" alt="Screenshot 2026-01-03 182948" src="https://github.com/user-attachments/assets/0e5789af-f6c3-473a-8e68-26ec42351848" />
 <img width="617" height="468" alt="Screenshot 2026-01-03 183013" src="https://github.com/user-attachments/assets/07d306fb-9f34-475f-8b0e-42af321a93b0" />
  
-
+---
 
 🚀 Live Demo
+
 Frontend (Vercel): https://tiny-files-pro.vercel.app/
 
 Backend (Render): https://tinyfilespro.onrender.com
+
+---
 
 🛠️ Tech Stack
 
@@ -35,6 +38,8 @@ Backend
 7. Sharp (image processing)
 8. PDF-Lib (PDF operations)
 
+---
+
 Deployment
 
 Frontend: Vercel
@@ -42,6 +47,8 @@ Frontend: Vercel
 Backend: Render
 
 Database: MongoDB Atlas
+
+---
 
 ✨ Features
 
@@ -69,7 +76,11 @@ Database: MongoDB Atlas
 2. Tracks original vs processed file size
 3. Operation type tracking
 
+
+---
+
 🧠 Project Architecture
+```
 Frontend (React + Vite)
         |
         | HTTPS API Requests
@@ -78,13 +89,15 @@ Backend (Node + Express)
         |
         ↓
 MongoDB Atlas
-
+```
 
 Frontend communicates with backend using REST APIs
 
 Backend handles authentication, validation, and file processing
 
 MongoDB stores users and history data
+
+---
 
 🔑 Authentication Flow (JWT)
 
@@ -94,6 +107,8 @@ MongoDB stores users and history data
 * Token is stored in browser (localStorage)
 * Token is attached to protected API requests
 * Backend verifies token for secure access
+
+---
 
 🌍 Environment Variables
 
@@ -109,6 +124,8 @@ VITE_API_URL=https://tinyfilespro.onrender.com/api
 
 
 ⚠️ .env files are excluded from version control using .gitignore
+
+---
 
 📦 Installation (Local Setup)
 
@@ -132,12 +149,16 @@ npm install
 npm run dev
 ```
 
+---
+
 Frontend runs on:
 http://localhost:5173
 
 
 Backend runs on:
 http://localhost:5000
+
+---
 
 🧪 Error Handling & Security
 1. Proper HTTP status codes (400, 401, 500)
@@ -146,10 +167,11 @@ http://localhost:5000
 4. JWT secret stored securely in environment variables
 5. CORS configured for production & development
 
-
+---
 
 Author : Sumit Kumar
 
+---
 
 📜 License
 This project is created for educational and learning purposes.
